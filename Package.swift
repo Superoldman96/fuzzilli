@@ -25,7 +25,11 @@ let package = Package(
         .library(name: "Fuzzilli",targets: ["Fuzzilli"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/apple/swift-protobuf.git", from: "1.31.0"),
+        // We use an exact version here as we also use this version to generate the .pb.swift to
+        // ensure that they are always regenerated with a consistent version. So this entry locks
+        // the version. It can be bumped arbitrarily, however, the generated files should be
+        // regenerated, whenever the version is bumped.
+        .package(url: "https://github.com/apple/swift-protobuf.git", exact: "1.35.0"),
         .package(
           url: "https://github.com/apple/swift-collections.git",
           .upToNextMinor(from: "1.2.0")

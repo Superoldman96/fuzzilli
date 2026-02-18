@@ -3115,26 +3115,26 @@ public struct Fuzzilli_Protobuf_Program: @unchecked Sendable {
   // methods supported on all messages.
 
   public var uuid: Data {
-    get {return _storage._uuid}
+    get {_storage._uuid}
     set {_uniqueStorage()._uuid = newValue}
   }
 
   public var code: [Fuzzilli_Protobuf_Instruction] {
-    get {return _storage._code}
+    get {_storage._code}
     set {_uniqueStorage()._code = newValue}
   }
 
   public var comments: Dictionary<Int32,String> {
-    get {return _storage._comments}
+    get {_storage._comments}
     set {_uniqueStorage()._comments = newValue}
   }
 
   public var parent: Fuzzilli_Protobuf_Program {
-    get {return _storage._parent ?? Fuzzilli_Protobuf_Program()}
+    get {_storage._parent ?? Fuzzilli_Protobuf_Program()}
     set {_uniqueStorage()._parent = newValue}
   }
   /// Returns true if `parent` has been explicitly set.
-  public var hasParent: Bool {return _storage._parent != nil}
+  public var hasParent: Bool {_storage._parent != nil}
   /// Clears the value of `parent`. Subsequent reads from it will return its default value.
   public mutating func clearParent() {_uniqueStorage()._parent = nil}
 

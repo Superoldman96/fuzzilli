@@ -203,17 +203,17 @@ public struct Compiler_Protobuf_VariableDeclarator: @unchecked Sendable {
   // methods supported on all messages.
 
   public var name: String {
-    get {return _storage._name}
+    get {_storage._name}
     set {_uniqueStorage()._name = newValue}
   }
 
   /// The value is optional
   public var value: Compiler_Protobuf_Expression {
-    get {return _storage._value ?? Compiler_Protobuf_Expression()}
+    get {_storage._value ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._value = newValue}
   }
   /// Returns true if `value` has been explicitly set.
-  public var hasValue: Bool {return _storage._value != nil}
+  public var hasValue: Bool {_storage._value != nil}
   /// Clears the value of `value`. Subsequent reads from it will return its default value.
   public mutating func clearValue() {_uniqueStorage()._value = nil}
 
@@ -276,11 +276,11 @@ public struct Compiler_Protobuf_FunctionDeclaration: Sendable {
   public var type: Compiler_Protobuf_FunctionType = .plain
 
   public var parameters: Compiler_Protobuf_Parameters {
-    get {return _parameters ?? Compiler_Protobuf_Parameters()}
+    get {_parameters ?? Compiler_Protobuf_Parameters()}
     set {_parameters = newValue}
   }
   /// Returns true if `parameters` has been explicitly set.
-  public var hasParameters: Bool {return self._parameters != nil}
+  public var hasParameters: Bool {self._parameters != nil}
   /// Clears the value of `parameters`. Subsequent reads from it will return its default value.
   public mutating func clearParameters() {self._parameters = nil}
 
@@ -348,11 +348,11 @@ public struct Compiler_Protobuf_ClassProperty: Sendable {
   // methods supported on all messages.
 
   public var key: Compiler_Protobuf_PropertyKey {
-    get {return _key ?? Compiler_Protobuf_PropertyKey()}
+    get {_key ?? Compiler_Protobuf_PropertyKey()}
     set {_key = newValue}
   }
   /// Returns true if `key` has been explicitly set.
-  public var hasKey: Bool {return self._key != nil}
+  public var hasKey: Bool {self._key != nil}
   /// Clears the value of `key`. Subsequent reads from it will return its default value.
   public mutating func clearKey() {self._key = nil}
 
@@ -360,11 +360,11 @@ public struct Compiler_Protobuf_ClassProperty: Sendable {
 
   /// The value is optional
   public var value: Compiler_Protobuf_Expression {
-    get {return _value ?? Compiler_Protobuf_Expression()}
+    get {_value ?? Compiler_Protobuf_Expression()}
     set {_value = newValue}
   }
   /// Returns true if `value` has been explicitly set.
-  public var hasValue: Bool {return self._value != nil}
+  public var hasValue: Bool {self._value != nil}
   /// Clears the value of `value`. Subsequent reads from it will return its default value.
   public mutating func clearValue() {self._value = nil}
 
@@ -382,11 +382,11 @@ public struct Compiler_Protobuf_ClassConstructor: Sendable {
   // methods supported on all messages.
 
   public var parameters: Compiler_Protobuf_Parameters {
-    get {return _parameters ?? Compiler_Protobuf_Parameters()}
+    get {_parameters ?? Compiler_Protobuf_Parameters()}
     set {_parameters = newValue}
   }
   /// Returns true if `parameters` has been explicitly set.
-  public var hasParameters: Bool {return self._parameters != nil}
+  public var hasParameters: Bool {self._parameters != nil}
   /// Clears the value of `parameters`. Subsequent reads from it will return its default value.
   public mutating func clearParameters() {self._parameters = nil}
 
@@ -405,22 +405,22 @@ public struct Compiler_Protobuf_ClassMethod: Sendable {
   // methods supported on all messages.
 
   public var key: Compiler_Protobuf_PropertyKey {
-    get {return _key ?? Compiler_Protobuf_PropertyKey()}
+    get {_key ?? Compiler_Protobuf_PropertyKey()}
     set {_key = newValue}
   }
   /// Returns true if `key` has been explicitly set.
-  public var hasKey: Bool {return self._key != nil}
+  public var hasKey: Bool {self._key != nil}
   /// Clears the value of `key`. Subsequent reads from it will return its default value.
   public mutating func clearKey() {self._key = nil}
 
   public var isStatic: Bool = false
 
   public var parameters: Compiler_Protobuf_Parameters {
-    get {return _parameters ?? Compiler_Protobuf_Parameters()}
+    get {_parameters ?? Compiler_Protobuf_Parameters()}
     set {_parameters = newValue}
   }
   /// Returns true if `parameters` has been explicitly set.
-  public var hasParameters: Bool {return self._parameters != nil}
+  public var hasParameters: Bool {self._parameters != nil}
   /// Clears the value of `parameters`. Subsequent reads from it will return its default value.
   public mutating func clearParameters() {self._parameters = nil}
 
@@ -460,11 +460,11 @@ public struct Compiler_Protobuf_ClassSetter: Sendable {
   public var isStatic: Bool = false
 
   public var parameter: Compiler_Protobuf_Parameter {
-    get {return _parameter ?? Compiler_Protobuf_Parameter()}
+    get {_parameter ?? Compiler_Protobuf_Parameter()}
     set {_parameter = newValue}
   }
   /// Returns true if `parameter` has been explicitly set.
-  public var hasParameter: Bool {return self._parameter != nil}
+  public var hasParameter: Bool {self._parameter != nil}
   /// Clears the value of `parameter`. Subsequent reads from it will return its default value.
   public mutating func clearParameter() {self._parameter = nil}
 
@@ -565,22 +565,22 @@ public struct Compiler_Protobuf_ClassDeclaration: @unchecked Sendable {
   // methods supported on all messages.
 
   public var name: String {
-    get {return _storage._name}
+    get {_storage._name}
     set {_uniqueStorage()._name = newValue}
   }
 
   /// The superclass is optional
   public var superClass: Compiler_Protobuf_Expression {
-    get {return _storage._superClass ?? Compiler_Protobuf_Expression()}
+    get {_storage._superClass ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._superClass = newValue}
   }
   /// Returns true if `superClass` has been explicitly set.
-  public var hasSuperClass: Bool {return _storage._superClass != nil}
+  public var hasSuperClass: Bool {_storage._superClass != nil}
   /// Clears the value of `superClass`. Subsequent reads from it will return its default value.
   public mutating func clearSuperClass() {_uniqueStorage()._superClass = nil}
 
   public var fields: [Compiler_Protobuf_ClassField] {
-    get {return _storage._fields}
+    get {_storage._fields}
     set {_uniqueStorage()._fields = newValue}
   }
 
@@ -598,22 +598,22 @@ public struct Compiler_Protobuf_ClassExpression: @unchecked Sendable {
 
   /// The name is optional
   public var name: String {
-    get {return _storage._name}
+    get {_storage._name}
     set {_uniqueStorage()._name = newValue}
   }
 
   /// The superclass is optional
   public var superClass: Compiler_Protobuf_Expression {
-    get {return _storage._superClass ?? Compiler_Protobuf_Expression()}
+    get {_storage._superClass ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._superClass = newValue}
   }
   /// Returns true if `superClass` has been explicitly set.
-  public var hasSuperClass: Bool {return _storage._superClass != nil}
+  public var hasSuperClass: Bool {_storage._superClass != nil}
   /// Clears the value of `superClass`. Subsequent reads from it will return its default value.
   public mutating func clearSuperClass() {_uniqueStorage()._superClass = nil}
 
   public var fields: [Compiler_Protobuf_ClassField] {
-    get {return _storage._fields}
+    get {_storage._fields}
     set {_uniqueStorage()._fields = newValue}
   }
 
@@ -631,11 +631,11 @@ public struct Compiler_Protobuf_ReturnStatement: @unchecked Sendable {
 
   /// The argument is optional
   public var argument: Compiler_Protobuf_Expression {
-    get {return _storage._argument ?? Compiler_Protobuf_Expression()}
+    get {_storage._argument ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._argument = newValue}
   }
   /// Returns true if `argument` has been explicitly set.
-  public var hasArgument: Bool {return _storage._argument != nil}
+  public var hasArgument: Bool {_storage._argument != nil}
   /// Clears the value of `argument`. Subsequent reads from it will return its default value.
   public mutating func clearArgument() {_uniqueStorage()._argument = nil}
 
@@ -664,11 +664,11 @@ public struct Compiler_Protobuf_ExpressionStatement: @unchecked Sendable {
   // methods supported on all messages.
 
   public var expression: Compiler_Protobuf_Expression {
-    get {return _storage._expression ?? Compiler_Protobuf_Expression()}
+    get {_storage._expression ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._expression = newValue}
   }
   /// Returns true if `expression` has been explicitly set.
-  public var hasExpression: Bool {return _storage._expression != nil}
+  public var hasExpression: Bool {_storage._expression != nil}
   /// Clears the value of `expression`. Subsequent reads from it will return its default value.
   public mutating func clearExpression() {_uniqueStorage()._expression = nil}
 
@@ -685,30 +685,30 @@ public struct Compiler_Protobuf_IfStatement: @unchecked Sendable {
   // methods supported on all messages.
 
   public var test: Compiler_Protobuf_Expression {
-    get {return _storage._test ?? Compiler_Protobuf_Expression()}
+    get {_storage._test ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._test = newValue}
   }
   /// Returns true if `test` has been explicitly set.
-  public var hasTest: Bool {return _storage._test != nil}
+  public var hasTest: Bool {_storage._test != nil}
   /// Clears the value of `test`. Subsequent reads from it will return its default value.
   public mutating func clearTest() {_uniqueStorage()._test = nil}
 
   public var ifBody: Compiler_Protobuf_Statement {
-    get {return _storage._ifBody ?? Compiler_Protobuf_Statement()}
+    get {_storage._ifBody ?? Compiler_Protobuf_Statement()}
     set {_uniqueStorage()._ifBody = newValue}
   }
   /// Returns true if `ifBody` has been explicitly set.
-  public var hasIfBody: Bool {return _storage._ifBody != nil}
+  public var hasIfBody: Bool {_storage._ifBody != nil}
   /// Clears the value of `ifBody`. Subsequent reads from it will return its default value.
   public mutating func clearIfBody() {_uniqueStorage()._ifBody = nil}
 
   /// The else body is optional
   public var elseBody: Compiler_Protobuf_Statement {
-    get {return _storage._elseBody ?? Compiler_Protobuf_Statement()}
+    get {_storage._elseBody ?? Compiler_Protobuf_Statement()}
     set {_uniqueStorage()._elseBody = newValue}
   }
   /// Returns true if `elseBody` has been explicitly set.
-  public var hasElseBody: Bool {return _storage._elseBody != nil}
+  public var hasElseBody: Bool {_storage._elseBody != nil}
   /// Clears the value of `elseBody`. Subsequent reads from it will return its default value.
   public mutating func clearElseBody() {_uniqueStorage()._elseBody = nil}
 
@@ -725,20 +725,20 @@ public struct Compiler_Protobuf_WhileLoop: @unchecked Sendable {
   // methods supported on all messages.
 
   public var test: Compiler_Protobuf_Expression {
-    get {return _storage._test ?? Compiler_Protobuf_Expression()}
+    get {_storage._test ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._test = newValue}
   }
   /// Returns true if `test` has been explicitly set.
-  public var hasTest: Bool {return _storage._test != nil}
+  public var hasTest: Bool {_storage._test != nil}
   /// Clears the value of `test`. Subsequent reads from it will return its default value.
   public mutating func clearTest() {_uniqueStorage()._test = nil}
 
   public var body: Compiler_Protobuf_Statement {
-    get {return _storage._body ?? Compiler_Protobuf_Statement()}
+    get {_storage._body ?? Compiler_Protobuf_Statement()}
     set {_uniqueStorage()._body = newValue}
   }
   /// Returns true if `body` has been explicitly set.
-  public var hasBody: Bool {return _storage._body != nil}
+  public var hasBody: Bool {_storage._body != nil}
   /// Clears the value of `body`. Subsequent reads from it will return its default value.
   public mutating func clearBody() {_uniqueStorage()._body = nil}
 
@@ -755,20 +755,20 @@ public struct Compiler_Protobuf_DoWhileLoop: @unchecked Sendable {
   // methods supported on all messages.
 
   public var test: Compiler_Protobuf_Expression {
-    get {return _storage._test ?? Compiler_Protobuf_Expression()}
+    get {_storage._test ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._test = newValue}
   }
   /// Returns true if `test` has been explicitly set.
-  public var hasTest: Bool {return _storage._test != nil}
+  public var hasTest: Bool {_storage._test != nil}
   /// Clears the value of `test`. Subsequent reads from it will return its default value.
   public mutating func clearTest() {_uniqueStorage()._test = nil}
 
   public var body: Compiler_Protobuf_Statement {
-    get {return _storage._body ?? Compiler_Protobuf_Statement()}
+    get {_storage._body ?? Compiler_Protobuf_Statement()}
     set {_uniqueStorage()._body = newValue}
   }
   /// Returns true if `body` has been explicitly set.
-  public var hasBody: Bool {return _storage._body != nil}
+  public var hasBody: Bool {_storage._body != nil}
   /// Clears the value of `body`. Subsequent reads from it will return its default value.
   public mutating func clearBody() {_uniqueStorage()._body = nil}
 
@@ -808,30 +808,30 @@ public struct Compiler_Protobuf_ForLoop: @unchecked Sendable {
 
   /// This field is optional
   public var condition: Compiler_Protobuf_Expression {
-    get {return _storage._condition ?? Compiler_Protobuf_Expression()}
+    get {_storage._condition ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._condition = newValue}
   }
   /// Returns true if `condition` has been explicitly set.
-  public var hasCondition: Bool {return _storage._condition != nil}
+  public var hasCondition: Bool {_storage._condition != nil}
   /// Clears the value of `condition`. Subsequent reads from it will return its default value.
   public mutating func clearCondition() {_uniqueStorage()._condition = nil}
 
   /// This field is optional
   public var afterthought: Compiler_Protobuf_Expression {
-    get {return _storage._afterthought ?? Compiler_Protobuf_Expression()}
+    get {_storage._afterthought ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._afterthought = newValue}
   }
   /// Returns true if `afterthought` has been explicitly set.
-  public var hasAfterthought: Bool {return _storage._afterthought != nil}
+  public var hasAfterthought: Bool {_storage._afterthought != nil}
   /// Clears the value of `afterthought`. Subsequent reads from it will return its default value.
   public mutating func clearAfterthought() {_uniqueStorage()._afterthought = nil}
 
   public var body: Compiler_Protobuf_Statement {
-    get {return _storage._body ?? Compiler_Protobuf_Statement()}
+    get {_storage._body ?? Compiler_Protobuf_Statement()}
     set {_uniqueStorage()._body = newValue}
   }
   /// Returns true if `body` has been explicitly set.
-  public var hasBody: Bool {return _storage._body != nil}
+  public var hasBody: Bool {_storage._body != nil}
   /// Clears the value of `body`. Subsequent reads from it will return its default value.
   public mutating func clearBody() {_uniqueStorage()._body = nil}
 
@@ -855,29 +855,29 @@ public struct Compiler_Protobuf_ForInLoop: @unchecked Sendable {
   // methods supported on all messages.
 
   public var left: Compiler_Protobuf_VariableDeclarator {
-    get {return _storage._left ?? Compiler_Protobuf_VariableDeclarator()}
+    get {_storage._left ?? Compiler_Protobuf_VariableDeclarator()}
     set {_uniqueStorage()._left = newValue}
   }
   /// Returns true if `left` has been explicitly set.
-  public var hasLeft: Bool {return _storage._left != nil}
+  public var hasLeft: Bool {_storage._left != nil}
   /// Clears the value of `left`. Subsequent reads from it will return its default value.
   public mutating func clearLeft() {_uniqueStorage()._left = nil}
 
   public var right: Compiler_Protobuf_Expression {
-    get {return _storage._right ?? Compiler_Protobuf_Expression()}
+    get {_storage._right ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._right = newValue}
   }
   /// Returns true if `right` has been explicitly set.
-  public var hasRight: Bool {return _storage._right != nil}
+  public var hasRight: Bool {_storage._right != nil}
   /// Clears the value of `right`. Subsequent reads from it will return its default value.
   public mutating func clearRight() {_uniqueStorage()._right = nil}
 
   public var body: Compiler_Protobuf_Statement {
-    get {return _storage._body ?? Compiler_Protobuf_Statement()}
+    get {_storage._body ?? Compiler_Protobuf_Statement()}
     set {_uniqueStorage()._body = newValue}
   }
   /// Returns true if `body` has been explicitly set.
-  public var hasBody: Bool {return _storage._body != nil}
+  public var hasBody: Bool {_storage._body != nil}
   /// Clears the value of `body`. Subsequent reads from it will return its default value.
   public mutating func clearBody() {_uniqueStorage()._body = nil}
 
@@ -894,29 +894,29 @@ public struct Compiler_Protobuf_ForOfLoop: @unchecked Sendable {
   // methods supported on all messages.
 
   public var left: Compiler_Protobuf_VariableDeclarator {
-    get {return _storage._left ?? Compiler_Protobuf_VariableDeclarator()}
+    get {_storage._left ?? Compiler_Protobuf_VariableDeclarator()}
     set {_uniqueStorage()._left = newValue}
   }
   /// Returns true if `left` has been explicitly set.
-  public var hasLeft: Bool {return _storage._left != nil}
+  public var hasLeft: Bool {_storage._left != nil}
   /// Clears the value of `left`. Subsequent reads from it will return its default value.
   public mutating func clearLeft() {_uniqueStorage()._left = nil}
 
   public var right: Compiler_Protobuf_Expression {
-    get {return _storage._right ?? Compiler_Protobuf_Expression()}
+    get {_storage._right ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._right = newValue}
   }
   /// Returns true if `right` has been explicitly set.
-  public var hasRight: Bool {return _storage._right != nil}
+  public var hasRight: Bool {_storage._right != nil}
   /// Clears the value of `right`. Subsequent reads from it will return its default value.
   public mutating func clearRight() {_uniqueStorage()._right = nil}
 
   public var body: Compiler_Protobuf_Statement {
-    get {return _storage._body ?? Compiler_Protobuf_Statement()}
+    get {_storage._body ?? Compiler_Protobuf_Statement()}
     set {_uniqueStorage()._body = newValue}
   }
   /// Returns true if `body` has been explicitly set.
-  public var hasBody: Bool {return _storage._body != nil}
+  public var hasBody: Bool {_storage._body != nil}
   /// Clears the value of `body`. Subsequent reads from it will return its default value.
   public mutating func clearBody() {_uniqueStorage()._body = nil}
 
@@ -954,11 +954,11 @@ public struct Compiler_Protobuf_CatchClause: Sendable {
 
   /// The parameter is optional
   public var parameter: Compiler_Protobuf_Parameter {
-    get {return _parameter ?? Compiler_Protobuf_Parameter()}
+    get {_parameter ?? Compiler_Protobuf_Parameter()}
     set {_parameter = newValue}
   }
   /// Returns true if `parameter` has been explicitly set.
-  public var hasParameter: Bool {return self._parameter != nil}
+  public var hasParameter: Bool {self._parameter != nil}
   /// Clears the value of `parameter`. Subsequent reads from it will return its default value.
   public mutating func clearParameter() {self._parameter = nil}
 
@@ -992,21 +992,21 @@ public struct Compiler_Protobuf_TryStatement: Sendable {
 
   /// The catch clause is optional
   public var `catch`: Compiler_Protobuf_CatchClause {
-    get {return _catch ?? Compiler_Protobuf_CatchClause()}
+    get {_catch ?? Compiler_Protobuf_CatchClause()}
     set {_catch = newValue}
   }
   /// Returns true if ``catch`` has been explicitly set.
-  public var hasCatch: Bool {return self._catch != nil}
+  public var hasCatch: Bool {self._catch != nil}
   /// Clears the value of ``catch``. Subsequent reads from it will return its default value.
   public mutating func clearCatch() {self._catch = nil}
 
   /// The finally clause is optional
   public var finally: Compiler_Protobuf_FinallyClause {
-    get {return _finally ?? Compiler_Protobuf_FinallyClause()}
+    get {_finally ?? Compiler_Protobuf_FinallyClause()}
     set {_finally = newValue}
   }
   /// Returns true if `finally` has been explicitly set.
-  public var hasFinally: Bool {return self._finally != nil}
+  public var hasFinally: Bool {self._finally != nil}
   /// Clears the value of `finally`. Subsequent reads from it will return its default value.
   public mutating func clearFinally() {self._finally = nil}
 
@@ -1024,11 +1024,11 @@ public struct Compiler_Protobuf_ThrowStatement: @unchecked Sendable {
   // methods supported on all messages.
 
   public var argument: Compiler_Protobuf_Expression {
-    get {return _storage._argument ?? Compiler_Protobuf_Expression()}
+    get {_storage._argument ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._argument = newValue}
   }
   /// Returns true if `argument` has been explicitly set.
-  public var hasArgument: Bool {return _storage._argument != nil}
+  public var hasArgument: Bool {_storage._argument != nil}
   /// Clears the value of `argument`. Subsequent reads from it will return its default value.
   public mutating func clearArgument() {_uniqueStorage()._argument = nil}
 
@@ -1045,20 +1045,20 @@ public struct Compiler_Protobuf_WithStatement: @unchecked Sendable {
   // methods supported on all messages.
 
   public var object: Compiler_Protobuf_Expression {
-    get {return _storage._object ?? Compiler_Protobuf_Expression()}
+    get {_storage._object ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._object = newValue}
   }
   /// Returns true if `object` has been explicitly set.
-  public var hasObject: Bool {return _storage._object != nil}
+  public var hasObject: Bool {_storage._object != nil}
   /// Clears the value of `object`. Subsequent reads from it will return its default value.
   public mutating func clearObject() {_uniqueStorage()._object = nil}
 
   public var body: Compiler_Protobuf_Statement {
-    get {return _storage._body ?? Compiler_Protobuf_Statement()}
+    get {_storage._body ?? Compiler_Protobuf_Statement()}
     set {_uniqueStorage()._body = newValue}
   }
   /// Returns true if `body` has been explicitly set.
-  public var hasBody: Bool {return _storage._body != nil}
+  public var hasBody: Bool {_storage._body != nil}
   /// Clears the value of `body`. Subsequent reads from it will return its default value.
   public mutating func clearBody() {_uniqueStorage()._body = nil}
 
@@ -1075,16 +1075,16 @@ public struct Compiler_Protobuf_SwitchStatement: @unchecked Sendable {
   // methods supported on all messages.
 
   public var discriminant: Compiler_Protobuf_Expression {
-    get {return _storage._discriminant ?? Compiler_Protobuf_Expression()}
+    get {_storage._discriminant ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._discriminant = newValue}
   }
   /// Returns true if `discriminant` has been explicitly set.
-  public var hasDiscriminant: Bool {return _storage._discriminant != nil}
+  public var hasDiscriminant: Bool {_storage._discriminant != nil}
   /// Clears the value of `discriminant`. Subsequent reads from it will return its default value.
   public mutating func clearDiscriminant() {_uniqueStorage()._discriminant = nil}
 
   public var cases: [Compiler_Protobuf_SwitchCase] {
-    get {return _storage._cases}
+    get {_storage._cases}
     set {_uniqueStorage()._cases = newValue}
   }
 
@@ -1101,11 +1101,11 @@ public struct Compiler_Protobuf_SwitchCase: Sendable {
   // methods supported on all messages.
 
   public var test: Compiler_Protobuf_Expression {
-    get {return _test ?? Compiler_Protobuf_Expression()}
+    get {_test ?? Compiler_Protobuf_Expression()}
     set {_test = newValue}
   }
   /// Returns true if `test` has been explicitly set.
-  public var hasTest: Bool {return self._test != nil}
+  public var hasTest: Bool {self._test != nil}
   /// Clears the value of `test`. Subsequent reads from it will return its default value.
   public mutating func clearTest() {self._test = nil}
 
@@ -1442,25 +1442,25 @@ public struct Compiler_Protobuf_AssignmentExpression: @unchecked Sendable {
   // methods supported on all messages.
 
   public var `operator`: String {
-    get {return _storage._operator}
+    get {_storage._operator}
     set {_uniqueStorage()._operator = newValue}
   }
 
   public var lhs: Compiler_Protobuf_Expression {
-    get {return _storage._lhs ?? Compiler_Protobuf_Expression()}
+    get {_storage._lhs ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._lhs = newValue}
   }
   /// Returns true if `lhs` has been explicitly set.
-  public var hasLhs: Bool {return _storage._lhs != nil}
+  public var hasLhs: Bool {_storage._lhs != nil}
   /// Clears the value of `lhs`. Subsequent reads from it will return its default value.
   public mutating func clearLhs() {_uniqueStorage()._lhs = nil}
 
   public var rhs: Compiler_Protobuf_Expression {
-    get {return _storage._rhs ?? Compiler_Protobuf_Expression()}
+    get {_storage._rhs ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._rhs = newValue}
   }
   /// Returns true if `rhs` has been explicitly set.
-  public var hasRhs: Bool {return _storage._rhs != nil}
+  public var hasRhs: Bool {_storage._rhs != nil}
   /// Clears the value of `rhs`. Subsequent reads from it will return its default value.
   public mutating func clearRhs() {_uniqueStorage()._rhs = nil}
 
@@ -1506,11 +1506,11 @@ public struct Compiler_Protobuf_ObjectProperty: Sendable {
   }
 
   public var value: Compiler_Protobuf_Expression {
-    get {return _value ?? Compiler_Protobuf_Expression()}
+    get {_value ?? Compiler_Protobuf_Expression()}
     set {_value = newValue}
   }
   /// Returns true if `value` has been explicitly set.
-  public var hasValue: Bool {return self._value != nil}
+  public var hasValue: Bool {self._value != nil}
   /// Clears the value of `value`. Subsequent reads from it will return its default value.
   public mutating func clearValue() {self._value = nil}
 
@@ -1557,11 +1557,11 @@ public struct Compiler_Protobuf_ObjectMethod: Sendable {
   public var type: Compiler_Protobuf_FunctionType = .plain
 
   public var parameters: Compiler_Protobuf_Parameters {
-    get {return _parameters ?? Compiler_Protobuf_Parameters()}
+    get {_parameters ?? Compiler_Protobuf_Parameters()}
     set {_parameters = newValue}
   }
   /// Returns true if `parameters` has been explicitly set.
-  public var hasParameters: Bool {return self._parameters != nil}
+  public var hasParameters: Bool {self._parameters != nil}
   /// Clears the value of `parameters`. Subsequent reads from it will return its default value.
   public mutating func clearParameters() {self._parameters = nil}
 
@@ -1640,11 +1640,11 @@ public struct Compiler_Protobuf_ObjectSetter: Sendable {
   }
 
   public var parameter: Compiler_Protobuf_Parameter {
-    get {return _parameter ?? Compiler_Protobuf_Parameter()}
+    get {_parameter ?? Compiler_Protobuf_Parameter()}
     set {_parameter = newValue}
   }
   /// Returns true if `parameter` has been explicitly set.
-  public var hasParameter: Bool {return self._parameter != nil}
+  public var hasParameter: Bool {self._parameter != nil}
   /// Clears the value of `parameter`. Subsequent reads from it will return its default value.
   public mutating func clearParameter() {self._parameter = nil}
 
@@ -1751,11 +1751,11 @@ public struct Compiler_Protobuf_FunctionExpression: Sendable {
   public var type: Compiler_Protobuf_FunctionType = .plain
 
   public var parameters: Compiler_Protobuf_Parameters {
-    get {return _parameters ?? Compiler_Protobuf_Parameters()}
+    get {_parameters ?? Compiler_Protobuf_Parameters()}
     set {_parameters = newValue}
   }
   /// Returns true if `parameters` has been explicitly set.
-  public var hasParameters: Bool {return self._parameters != nil}
+  public var hasParameters: Bool {self._parameters != nil}
   /// Clears the value of `parameters`. Subsequent reads from it will return its default value.
   public mutating func clearParameters() {self._parameters = nil}
 
@@ -1774,16 +1774,16 @@ public struct Compiler_Protobuf_ArrowFunctionExpression: @unchecked Sendable {
   // methods supported on all messages.
 
   public var type: Compiler_Protobuf_FunctionType {
-    get {return _storage._type}
+    get {_storage._type}
     set {_uniqueStorage()._type = newValue}
   }
 
   public var parameters: Compiler_Protobuf_Parameters {
-    get {return _storage._parameters ?? Compiler_Protobuf_Parameters()}
+    get {_storage._parameters ?? Compiler_Protobuf_Parameters()}
     set {_uniqueStorage()._parameters = newValue}
   }
   /// Returns true if `parameters` has been explicitly set.
-  public var hasParameters: Bool {return _storage._parameters != nil}
+  public var hasParameters: Bool {_storage._parameters != nil}
   /// Clears the value of `parameters`. Subsequent reads from it will return its default value.
   public mutating func clearParameters() {_uniqueStorage()._parameters = nil}
 
@@ -1829,21 +1829,21 @@ public struct Compiler_Protobuf_CallExpression: @unchecked Sendable {
   // methods supported on all messages.
 
   public var callee: Compiler_Protobuf_Expression {
-    get {return _storage._callee ?? Compiler_Protobuf_Expression()}
+    get {_storage._callee ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._callee = newValue}
   }
   /// Returns true if `callee` has been explicitly set.
-  public var hasCallee: Bool {return _storage._callee != nil}
+  public var hasCallee: Bool {_storage._callee != nil}
   /// Clears the value of `callee`. Subsequent reads from it will return its default value.
   public mutating func clearCallee() {_uniqueStorage()._callee = nil}
 
   public var arguments: [Compiler_Protobuf_Expression] {
-    get {return _storage._arguments}
+    get {_storage._arguments}
     set {_uniqueStorage()._arguments = newValue}
   }
 
   public var isOptional: Bool {
-    get {return _storage._isOptional}
+    get {_storage._isOptional}
     set {_uniqueStorage()._isOptional = newValue}
   }
 
@@ -1860,16 +1860,16 @@ public struct Compiler_Protobuf_NewExpression: @unchecked Sendable {
   // methods supported on all messages.
 
   public var callee: Compiler_Protobuf_Expression {
-    get {return _storage._callee ?? Compiler_Protobuf_Expression()}
+    get {_storage._callee ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._callee = newValue}
   }
   /// Returns true if `callee` has been explicitly set.
-  public var hasCallee: Bool {return _storage._callee != nil}
+  public var hasCallee: Bool {_storage._callee != nil}
   /// Clears the value of `callee`. Subsequent reads from it will return its default value.
   public mutating func clearCallee() {_uniqueStorage()._callee = nil}
 
   public var arguments: [Compiler_Protobuf_Expression] {
-    get {return _storage._arguments}
+    get {_storage._arguments}
     set {_uniqueStorage()._arguments = newValue}
   }
 
@@ -1886,11 +1886,11 @@ public struct Compiler_Protobuf_MemberExpression: @unchecked Sendable {
   // methods supported on all messages.
 
   public var object: Compiler_Protobuf_Expression {
-    get {return _storage._object ?? Compiler_Protobuf_Expression()}
+    get {_storage._object ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._object = newValue}
   }
   /// Returns true if `object` has been explicitly set.
-  public var hasObject: Bool {return _storage._object != nil}
+  public var hasObject: Bool {_storage._object != nil}
   /// Clears the value of `object`. Subsequent reads from it will return its default value.
   public mutating func clearObject() {_uniqueStorage()._object = nil}
 
@@ -1918,7 +1918,7 @@ public struct Compiler_Protobuf_MemberExpression: @unchecked Sendable {
   }
 
   public var isOptional: Bool {
-    get {return _storage._isOptional}
+    get {_storage._isOptional}
     set {_uniqueStorage()._isOptional = newValue}
   }
 
@@ -1943,16 +1943,16 @@ public struct Compiler_Protobuf_UnaryExpression: @unchecked Sendable {
   // methods supported on all messages.
 
   public var `operator`: String {
-    get {return _storage._operator}
+    get {_storage._operator}
     set {_uniqueStorage()._operator = newValue}
   }
 
   public var argument: Compiler_Protobuf_Expression {
-    get {return _storage._argument ?? Compiler_Protobuf_Expression()}
+    get {_storage._argument ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._argument = newValue}
   }
   /// Returns true if `argument` has been explicitly set.
-  public var hasArgument: Bool {return _storage._argument != nil}
+  public var hasArgument: Bool {_storage._argument != nil}
   /// Clears the value of `argument`. Subsequent reads from it will return its default value.
   public mutating func clearArgument() {_uniqueStorage()._argument = nil}
 
@@ -1969,25 +1969,25 @@ public struct Compiler_Protobuf_BinaryExpression: @unchecked Sendable {
   // methods supported on all messages.
 
   public var `operator`: String {
-    get {return _storage._operator}
+    get {_storage._operator}
     set {_uniqueStorage()._operator = newValue}
   }
 
   public var lhs: Compiler_Protobuf_Expression {
-    get {return _storage._lhs ?? Compiler_Protobuf_Expression()}
+    get {_storage._lhs ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._lhs = newValue}
   }
   /// Returns true if `lhs` has been explicitly set.
-  public var hasLhs: Bool {return _storage._lhs != nil}
+  public var hasLhs: Bool {_storage._lhs != nil}
   /// Clears the value of `lhs`. Subsequent reads from it will return its default value.
   public mutating func clearLhs() {_uniqueStorage()._lhs = nil}
 
   public var rhs: Compiler_Protobuf_Expression {
-    get {return _storage._rhs ?? Compiler_Protobuf_Expression()}
+    get {_storage._rhs ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._rhs = newValue}
   }
   /// Returns true if `rhs` has been explicitly set.
-  public var hasRhs: Bool {return _storage._rhs != nil}
+  public var hasRhs: Bool {_storage._rhs != nil}
   /// Clears the value of `rhs`. Subsequent reads from it will return its default value.
   public mutating func clearRhs() {_uniqueStorage()._rhs = nil}
 
@@ -2004,21 +2004,21 @@ public struct Compiler_Protobuf_UpdateExpression: @unchecked Sendable {
   // methods supported on all messages.
 
   public var `operator`: String {
-    get {return _storage._operator}
+    get {_storage._operator}
     set {_uniqueStorage()._operator = newValue}
   }
 
   public var isPrefix: Bool {
-    get {return _storage._isPrefix}
+    get {_storage._isPrefix}
     set {_uniqueStorage()._isPrefix = newValue}
   }
 
   public var argument: Compiler_Protobuf_Expression {
-    get {return _storage._argument ?? Compiler_Protobuf_Expression()}
+    get {_storage._argument ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._argument = newValue}
   }
   /// Returns true if `argument` has been explicitly set.
-  public var hasArgument: Bool {return _storage._argument != nil}
+  public var hasArgument: Bool {_storage._argument != nil}
   /// Clears the value of `argument`. Subsequent reads from it will return its default value.
   public mutating func clearArgument() {_uniqueStorage()._argument = nil}
 
@@ -2036,11 +2036,11 @@ public struct Compiler_Protobuf_YieldExpression: @unchecked Sendable {
 
   /// The argument is optional
   public var argument: Compiler_Protobuf_Expression {
-    get {return _storage._argument ?? Compiler_Protobuf_Expression()}
+    get {_storage._argument ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._argument = newValue}
   }
   /// Returns true if `argument` has been explicitly set.
-  public var hasArgument: Bool {return _storage._argument != nil}
+  public var hasArgument: Bool {_storage._argument != nil}
   /// Clears the value of `argument`. Subsequent reads from it will return its default value.
   public mutating func clearArgument() {_uniqueStorage()._argument = nil}
 
@@ -2057,11 +2057,11 @@ public struct Compiler_Protobuf_SpreadElement: @unchecked Sendable {
   // methods supported on all messages.
 
   public var argument: Compiler_Protobuf_Expression {
-    get {return _storage._argument ?? Compiler_Protobuf_Expression()}
+    get {_storage._argument ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._argument = newValue}
   }
   /// Returns true if `argument` has been explicitly set.
-  public var hasArgument: Bool {return _storage._argument != nil}
+  public var hasArgument: Bool {_storage._argument != nil}
   /// Clears the value of `argument`. Subsequent reads from it will return its default value.
   public mutating func clearArgument() {_uniqueStorage()._argument = nil}
 
@@ -2103,31 +2103,31 @@ public struct Compiler_Protobuf_TernaryExpression: @unchecked Sendable {
 
   /// The test condition of the ternary expression.
   public var condition: Compiler_Protobuf_Expression {
-    get {return _storage._condition ?? Compiler_Protobuf_Expression()}
+    get {_storage._condition ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._condition = newValue}
   }
   /// Returns true if `condition` has been explicitly set.
-  public var hasCondition: Bool {return _storage._condition != nil}
+  public var hasCondition: Bool {_storage._condition != nil}
   /// Clears the value of `condition`. Subsequent reads from it will return its default value.
   public mutating func clearCondition() {_uniqueStorage()._condition = nil}
 
   /// The expression executed if the test is true.
   public var consequent: Compiler_Protobuf_Expression {
-    get {return _storage._consequent ?? Compiler_Protobuf_Expression()}
+    get {_storage._consequent ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._consequent = newValue}
   }
   /// Returns true if `consequent` has been explicitly set.
-  public var hasConsequent: Bool {return _storage._consequent != nil}
+  public var hasConsequent: Bool {_storage._consequent != nil}
   /// Clears the value of `consequent`. Subsequent reads from it will return its default value.
   public mutating func clearConsequent() {_uniqueStorage()._consequent = nil}
 
   /// The expression executed if the test is false.
   public var alternate: Compiler_Protobuf_Expression {
-    get {return _storage._alternate ?? Compiler_Protobuf_Expression()}
+    get {_storage._alternate ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._alternate = newValue}
   }
   /// Returns true if `alternate` has been explicitly set.
-  public var hasAlternate: Bool {return _storage._alternate != nil}
+  public var hasAlternate: Bool {_storage._alternate != nil}
   /// Clears the value of `alternate`. Subsequent reads from it will return its default value.
   public mutating func clearAlternate() {_uniqueStorage()._alternate = nil}
 
@@ -2144,11 +2144,11 @@ public struct Compiler_Protobuf_AwaitExpression: @unchecked Sendable {
   // methods supported on all messages.
 
   public var argument: Compiler_Protobuf_Expression {
-    get {return _storage._argument ?? Compiler_Protobuf_Expression()}
+    get {_storage._argument ?? Compiler_Protobuf_Expression()}
     set {_uniqueStorage()._argument = newValue}
   }
   /// Returns true if `argument` has been explicitly set.
-  public var hasArgument: Bool {return _storage._argument != nil}
+  public var hasArgument: Bool {_storage._argument != nil}
   /// Clears the value of `argument`. Subsequent reads from it will return its default value.
   public mutating func clearArgument() {_uniqueStorage()._argument = nil}
 
@@ -2187,7 +2187,7 @@ public struct Compiler_Protobuf_SuperMemberExpression: @unchecked Sendable {
   }
 
   public var isOptional: Bool {
-    get {return _storage._isOptional}
+    get {_storage._isOptional}
     set {_uniqueStorage()._isOptional = newValue}
   }
 

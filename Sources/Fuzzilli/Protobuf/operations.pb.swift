@@ -1655,11 +1655,11 @@ public struct Fuzzilli_Protobuf_LoadString: Sendable {
   public var value: String = String()
 
   public var customName: String {
-    get {return _customName ?? String()}
+    get {_customName ?? String()}
     set {_customName = newValue}
   }
   /// Returns true if `customName` has been explicitly set.
-  public var hasCustomName: Bool {return self._customName != nil}
+  public var hasCustomName: Bool {self._customName != nil}
   /// Clears the value of `customName`. Subsequent reads from it will return its default value.
   public mutating func clearCustomName() {self._customName = nil}
 
@@ -1828,11 +1828,11 @@ public struct Fuzzilli_Protobuf_BeginObjectLiteralMethod: Sendable {
   public var methodName: String = String()
 
   public var parameters: Fuzzilli_Protobuf_Parameters {
-    get {return _parameters ?? Fuzzilli_Protobuf_Parameters()}
+    get {_parameters ?? Fuzzilli_Protobuf_Parameters()}
     set {_parameters = newValue}
   }
   /// Returns true if `parameters` has been explicitly set.
-  public var hasParameters: Bool {return self._parameters != nil}
+  public var hasParameters: Bool {self._parameters != nil}
   /// Clears the value of `parameters`. Subsequent reads from it will return its default value.
   public mutating func clearParameters() {self._parameters = nil}
 
@@ -1859,11 +1859,11 @@ public struct Fuzzilli_Protobuf_BeginObjectLiteralComputedMethod: Sendable {
   // methods supported on all messages.
 
   public var parameters: Fuzzilli_Protobuf_Parameters {
-    get {return _parameters ?? Fuzzilli_Protobuf_Parameters()}
+    get {_parameters ?? Fuzzilli_Protobuf_Parameters()}
     set {_parameters = newValue}
   }
   /// Returns true if `parameters` has been explicitly set.
-  public var hasParameters: Bool {return self._parameters != nil}
+  public var hasParameters: Bool {self._parameters != nil}
   /// Clears the value of `parameters`. Subsequent reads from it will return its default value.
   public mutating func clearParameters() {self._parameters = nil}
 
@@ -1958,11 +1958,11 @@ public struct Fuzzilli_Protobuf_BeginClassConstructor: Sendable {
   // methods supported on all messages.
 
   public var parameters: Fuzzilli_Protobuf_Parameters {
-    get {return _parameters ?? Fuzzilli_Protobuf_Parameters()}
+    get {_parameters ?? Fuzzilli_Protobuf_Parameters()}
     set {_parameters = newValue}
   }
   /// Returns true if `parameters` has been explicitly set.
-  public var hasParameters: Bool {return self._parameters != nil}
+  public var hasParameters: Bool {self._parameters != nil}
   /// Clears the value of `parameters`. Subsequent reads from it will return its default value.
   public mutating func clearParameters() {self._parameters = nil}
 
@@ -2031,11 +2031,11 @@ public struct Fuzzilli_Protobuf_BeginClassInstanceMethod: Sendable {
   public var methodName: String = String()
 
   public var parameters: Fuzzilli_Protobuf_Parameters {
-    get {return _parameters ?? Fuzzilli_Protobuf_Parameters()}
+    get {_parameters ?? Fuzzilli_Protobuf_Parameters()}
     set {_parameters = newValue}
   }
   /// Returns true if `parameters` has been explicitly set.
-  public var hasParameters: Bool {return self._parameters != nil}
+  public var hasParameters: Bool {self._parameters != nil}
   /// Clears the value of `parameters`. Subsequent reads from it will return its default value.
   public mutating func clearParameters() {self._parameters = nil}
 
@@ -2062,11 +2062,11 @@ public struct Fuzzilli_Protobuf_BeginClassInstanceComputedMethod: Sendable {
   // methods supported on all messages.
 
   public var parameters: Fuzzilli_Protobuf_Parameters {
-    get {return _parameters ?? Fuzzilli_Protobuf_Parameters()}
+    get {_parameters ?? Fuzzilli_Protobuf_Parameters()}
     set {_parameters = newValue}
   }
   /// Returns true if `parameters` has been explicitly set.
-  public var hasParameters: Bool {return self._parameters != nil}
+  public var hasParameters: Bool {self._parameters != nil}
   /// Clears the value of `parameters`. Subsequent reads from it will return its default value.
   public mutating func clearParameters() {self._parameters = nil}
 
@@ -2199,11 +2199,11 @@ public struct Fuzzilli_Protobuf_BeginClassStaticMethod: Sendable {
   public var methodName: String = String()
 
   public var parameters: Fuzzilli_Protobuf_Parameters {
-    get {return _parameters ?? Fuzzilli_Protobuf_Parameters()}
+    get {_parameters ?? Fuzzilli_Protobuf_Parameters()}
     set {_parameters = newValue}
   }
   /// Returns true if `parameters` has been explicitly set.
-  public var hasParameters: Bool {return self._parameters != nil}
+  public var hasParameters: Bool {self._parameters != nil}
   /// Clears the value of `parameters`. Subsequent reads from it will return its default value.
   public mutating func clearParameters() {self._parameters = nil}
 
@@ -2230,11 +2230,11 @@ public struct Fuzzilli_Protobuf_BeginClassStaticComputedMethod: Sendable {
   // methods supported on all messages.
 
   public var parameters: Fuzzilli_Protobuf_Parameters {
-    get {return _parameters ?? Fuzzilli_Protobuf_Parameters()}
+    get {_parameters ?? Fuzzilli_Protobuf_Parameters()}
     set {_parameters = newValue}
   }
   /// Returns true if `parameters` has been explicitly set.
-  public var hasParameters: Bool {return self._parameters != nil}
+  public var hasParameters: Bool {self._parameters != nil}
   /// Clears the value of `parameters`. Subsequent reads from it will return its default value.
   public mutating func clearParameters() {self._parameters = nil}
 
@@ -2321,11 +2321,11 @@ public struct Fuzzilli_Protobuf_BeginClassPrivateInstanceMethod: Sendable {
   public var methodName: String = String()
 
   public var parameters: Fuzzilli_Protobuf_Parameters {
-    get {return _parameters ?? Fuzzilli_Protobuf_Parameters()}
+    get {_parameters ?? Fuzzilli_Protobuf_Parameters()}
     set {_parameters = newValue}
   }
   /// Returns true if `parameters` has been explicitly set.
-  public var hasParameters: Bool {return self._parameters != nil}
+  public var hasParameters: Bool {self._parameters != nil}
   /// Clears the value of `parameters`. Subsequent reads from it will return its default value.
   public mutating func clearParameters() {self._parameters = nil}
 
@@ -2368,11 +2368,11 @@ public struct Fuzzilli_Protobuf_BeginClassPrivateStaticMethod: Sendable {
   public var methodName: String = String()
 
   public var parameters: Fuzzilli_Protobuf_Parameters {
-    get {return _parameters ?? Fuzzilli_Protobuf_Parameters()}
+    get {_parameters ?? Fuzzilli_Protobuf_Parameters()}
     set {_parameters = newValue}
   }
   /// Returns true if `parameters` has been explicitly set.
-  public var hasParameters: Bool {return self._parameters != nil}
+  public var hasParameters: Bool {self._parameters != nil}
   /// Clears the value of `parameters`. Subsequent reads from it will return its default value.
   public mutating func clearParameters() {self._parameters = nil}
 
@@ -2721,11 +2721,11 @@ public struct Fuzzilli_Protobuf_BeginPlainFunction: Sendable {
   // methods supported on all messages.
 
   public var parameters: Fuzzilli_Protobuf_Parameters {
-    get {return _parameters ?? Fuzzilli_Protobuf_Parameters()}
+    get {_parameters ?? Fuzzilli_Protobuf_Parameters()}
     set {_parameters = newValue}
   }
   /// Returns true if `parameters` has been explicitly set.
-  public var hasParameters: Bool {return self._parameters != nil}
+  public var hasParameters: Bool {self._parameters != nil}
   /// Clears the value of `parameters`. Subsequent reads from it will return its default value.
   public mutating func clearParameters() {self._parameters = nil}
 
@@ -2755,11 +2755,11 @@ public struct Fuzzilli_Protobuf_BeginArrowFunction: Sendable {
   // methods supported on all messages.
 
   public var parameters: Fuzzilli_Protobuf_Parameters {
-    get {return _parameters ?? Fuzzilli_Protobuf_Parameters()}
+    get {_parameters ?? Fuzzilli_Protobuf_Parameters()}
     set {_parameters = newValue}
   }
   /// Returns true if `parameters` has been explicitly set.
-  public var hasParameters: Bool {return self._parameters != nil}
+  public var hasParameters: Bool {self._parameters != nil}
   /// Clears the value of `parameters`. Subsequent reads from it will return its default value.
   public mutating func clearParameters() {self._parameters = nil}
 
@@ -2786,11 +2786,11 @@ public struct Fuzzilli_Protobuf_BeginGeneratorFunction: Sendable {
   // methods supported on all messages.
 
   public var parameters: Fuzzilli_Protobuf_Parameters {
-    get {return _parameters ?? Fuzzilli_Protobuf_Parameters()}
+    get {_parameters ?? Fuzzilli_Protobuf_Parameters()}
     set {_parameters = newValue}
   }
   /// Returns true if `parameters` has been explicitly set.
-  public var hasParameters: Bool {return self._parameters != nil}
+  public var hasParameters: Bool {self._parameters != nil}
   /// Clears the value of `parameters`. Subsequent reads from it will return its default value.
   public mutating func clearParameters() {self._parameters = nil}
 
@@ -2820,11 +2820,11 @@ public struct Fuzzilli_Protobuf_BeginAsyncFunction: Sendable {
   // methods supported on all messages.
 
   public var parameters: Fuzzilli_Protobuf_Parameters {
-    get {return _parameters ?? Fuzzilli_Protobuf_Parameters()}
+    get {_parameters ?? Fuzzilli_Protobuf_Parameters()}
     set {_parameters = newValue}
   }
   /// Returns true if `parameters` has been explicitly set.
-  public var hasParameters: Bool {return self._parameters != nil}
+  public var hasParameters: Bool {self._parameters != nil}
   /// Clears the value of `parameters`. Subsequent reads from it will return its default value.
   public mutating func clearParameters() {self._parameters = nil}
 
@@ -2854,11 +2854,11 @@ public struct Fuzzilli_Protobuf_BeginAsyncArrowFunction: Sendable {
   // methods supported on all messages.
 
   public var parameters: Fuzzilli_Protobuf_Parameters {
-    get {return _parameters ?? Fuzzilli_Protobuf_Parameters()}
+    get {_parameters ?? Fuzzilli_Protobuf_Parameters()}
     set {_parameters = newValue}
   }
   /// Returns true if `parameters` has been explicitly set.
-  public var hasParameters: Bool {return self._parameters != nil}
+  public var hasParameters: Bool {self._parameters != nil}
   /// Clears the value of `parameters`. Subsequent reads from it will return its default value.
   public mutating func clearParameters() {self._parameters = nil}
 
@@ -2885,11 +2885,11 @@ public struct Fuzzilli_Protobuf_BeginAsyncGeneratorFunction: Sendable {
   // methods supported on all messages.
 
   public var parameters: Fuzzilli_Protobuf_Parameters {
-    get {return _parameters ?? Fuzzilli_Protobuf_Parameters()}
+    get {_parameters ?? Fuzzilli_Protobuf_Parameters()}
     set {_parameters = newValue}
   }
   /// Returns true if `parameters` has been explicitly set.
-  public var hasParameters: Bool {return self._parameters != nil}
+  public var hasParameters: Bool {self._parameters != nil}
   /// Clears the value of `parameters`. Subsequent reads from it will return its default value.
   public mutating func clearParameters() {self._parameters = nil}
 
@@ -2919,11 +2919,11 @@ public struct Fuzzilli_Protobuf_BeginConstructor: Sendable {
   // methods supported on all messages.
 
   public var parameters: Fuzzilli_Protobuf_Parameters {
-    get {return _parameters ?? Fuzzilli_Protobuf_Parameters()}
+    get {_parameters ?? Fuzzilli_Protobuf_Parameters()}
     set {_parameters = newValue}
   }
   /// Returns true if `parameters` has been explicitly set.
-  public var hasParameters: Bool {return self._parameters != nil}
+  public var hasParameters: Bool {self._parameters != nil}
   /// Clears the value of `parameters`. Subsequent reads from it will return its default value.
   public mutating func clearParameters() {self._parameters = nil}
 
@@ -3934,11 +3934,11 @@ public struct Fuzzilli_Protobuf_CreateWasmGlobal: Sendable {
   // methods supported on all messages.
 
   public var wasmGlobal: Fuzzilli_Protobuf_WasmGlobal {
-    get {return _wasmGlobal ?? Fuzzilli_Protobuf_WasmGlobal()}
+    get {_wasmGlobal ?? Fuzzilli_Protobuf_WasmGlobal()}
     set {_wasmGlobal = newValue}
   }
   /// Returns true if `wasmGlobal` has been explicitly set.
-  public var hasWasmGlobal: Bool {return self._wasmGlobal != nil}
+  public var hasWasmGlobal: Bool {self._wasmGlobal != nil}
   /// Clears the value of `wasmGlobal`. Subsequent reads from it will return its default value.
   public mutating func clearWasmGlobal() {self._wasmGlobal = nil}
 
@@ -3955,11 +3955,11 @@ public struct Fuzzilli_Protobuf_CreateWasmMemory: Sendable {
   // methods supported on all messages.
 
   public var wasmMemory: Fuzzilli_Protobuf_WasmMemory {
-    get {return _wasmMemory ?? Fuzzilli_Protobuf_WasmMemory()}
+    get {_wasmMemory ?? Fuzzilli_Protobuf_WasmMemory()}
     set {_wasmMemory = newValue}
   }
   /// Returns true if `wasmMemory` has been explicitly set.
-  public var hasWasmMemory: Bool {return self._wasmMemory != nil}
+  public var hasWasmMemory: Bool {self._wasmMemory != nil}
   /// Clears the value of `wasmMemory`. Subsequent reads from it will return its default value.
   public mutating func clearWasmMemory() {self._wasmMemory = nil}
 
@@ -3976,22 +3976,22 @@ public struct Fuzzilli_Protobuf_CreateWasmTable: Sendable {
   // methods supported on all messages.
 
   public var elementType: Fuzzilli_Protobuf_WasmILType {
-    get {return _elementType ?? Fuzzilli_Protobuf_WasmILType()}
+    get {_elementType ?? Fuzzilli_Protobuf_WasmILType()}
     set {_elementType = newValue}
   }
   /// Returns true if `elementType` has been explicitly set.
-  public var hasElementType: Bool {return self._elementType != nil}
+  public var hasElementType: Bool {self._elementType != nil}
   /// Clears the value of `elementType`. Subsequent reads from it will return its default value.
   public mutating func clearElementType() {self._elementType = nil}
 
   public var minSize: Int64 = 0
 
   public var maxSize: Int64 {
-    get {return _maxSize ?? 0}
+    get {_maxSize ?? 0}
     set {_maxSize = newValue}
   }
   /// Returns true if `maxSize` has been explicitly set.
-  public var hasMaxSize: Bool {return self._maxSize != nil}
+  public var hasMaxSize: Bool {self._maxSize != nil}
   /// Clears the value of `maxSize`. Subsequent reads from it will return its default value.
   public mutating func clearMaxSize() {self._maxSize = nil}
 
@@ -4758,11 +4758,11 @@ public struct Fuzzilli_Protobuf_WasmMemory: Sendable {
   public var minPages: Int64 = 0
 
   public var maxPages: Int64 {
-    get {return _maxPages ?? 0}
+    get {_maxPages ?? 0}
     set {_maxPages = newValue}
   }
   /// Returns true if `maxPages` has been explicitly set.
-  public var hasMaxPages: Bool {return self._maxPages != nil}
+  public var hasMaxPages: Bool {self._maxPages != nil}
   /// Clears the value of `maxPages`. Subsequent reads from it will return its default value.
   public mutating func clearMaxPages() {self._maxPages = nil}
 
@@ -4783,11 +4783,11 @@ public struct Fuzzilli_Protobuf_WasmDefineGlobal: Sendable {
   // methods supported on all messages.
 
   public var wasmGlobal: Fuzzilli_Protobuf_WasmGlobal {
-    get {return _wasmGlobal ?? Fuzzilli_Protobuf_WasmGlobal()}
+    get {_wasmGlobal ?? Fuzzilli_Protobuf_WasmGlobal()}
     set {_wasmGlobal = newValue}
   }
   /// Returns true if `wasmGlobal` has been explicitly set.
-  public var hasWasmGlobal: Bool {return self._wasmGlobal != nil}
+  public var hasWasmGlobal: Bool {self._wasmGlobal != nil}
   /// Clears the value of `wasmGlobal`. Subsequent reads from it will return its default value.
   public mutating func clearWasmGlobal() {self._wasmGlobal = nil}
 
@@ -4820,11 +4820,11 @@ public struct Fuzzilli_Protobuf_IndexedWasmSignature: Sendable {
   public var index: Int64 = 0
 
   public var signature: Fuzzilli_Protobuf_WasmSignature {
-    get {return _signature ?? Fuzzilli_Protobuf_WasmSignature()}
+    get {_signature ?? Fuzzilli_Protobuf_WasmSignature()}
     set {_signature = newValue}
   }
   /// Returns true if `signature` has been explicitly set.
-  public var hasSignature: Bool {return self._signature != nil}
+  public var hasSignature: Bool {self._signature != nil}
   /// Clears the value of `signature`. Subsequent reads from it will return its default value.
   public mutating func clearSignature() {self._signature = nil}
 
@@ -4841,22 +4841,22 @@ public struct Fuzzilli_Protobuf_WasmDefineTable: Sendable {
   // methods supported on all messages.
 
   public var elementType: Fuzzilli_Protobuf_WasmILType {
-    get {return _elementType ?? Fuzzilli_Protobuf_WasmILType()}
+    get {_elementType ?? Fuzzilli_Protobuf_WasmILType()}
     set {_elementType = newValue}
   }
   /// Returns true if `elementType` has been explicitly set.
-  public var hasElementType: Bool {return self._elementType != nil}
+  public var hasElementType: Bool {self._elementType != nil}
   /// Clears the value of `elementType`. Subsequent reads from it will return its default value.
   public mutating func clearElementType() {self._elementType = nil}
 
   public var minSize: Int64 = 0
 
   public var maxSize: Int64 {
-    get {return _maxSize ?? 0}
+    get {_maxSize ?? 0}
     set {_maxSize = newValue}
   }
   /// Returns true if `maxSize` has been explicitly set.
-  public var hasMaxSize: Bool {return self._maxSize != nil}
+  public var hasMaxSize: Bool {self._maxSize != nil}
   /// Clears the value of `maxSize`. Subsequent reads from it will return its default value.
   public mutating func clearMaxSize() {self._maxSize = nil}
 
@@ -4878,11 +4878,11 @@ public struct Fuzzilli_Protobuf_WasmDefineMemory: Sendable {
   // methods supported on all messages.
 
   public var wasmMemory: Fuzzilli_Protobuf_WasmMemory {
-    get {return _wasmMemory ?? Fuzzilli_Protobuf_WasmMemory()}
+    get {_wasmMemory ?? Fuzzilli_Protobuf_WasmMemory()}
     set {_wasmMemory = newValue}
   }
   /// Returns true if `wasmMemory` has been explicitly set.
-  public var hasWasmMemory: Bool {return self._wasmMemory != nil}
+  public var hasWasmMemory: Bool {self._wasmMemory != nil}
   /// Clears the value of `wasmMemory`. Subsequent reads from it will return its default value.
   public mutating func clearWasmMemory() {self._wasmMemory = nil}
 
@@ -4899,11 +4899,11 @@ public struct Fuzzilli_Protobuf_WasmLoadGlobal: Sendable {
   // methods supported on all messages.
 
   public var globalType: Fuzzilli_Protobuf_WasmILType {
-    get {return _globalType ?? Fuzzilli_Protobuf_WasmILType()}
+    get {_globalType ?? Fuzzilli_Protobuf_WasmILType()}
     set {_globalType = newValue}
   }
   /// Returns true if `globalType` has been explicitly set.
-  public var hasGlobalType: Bool {return self._globalType != nil}
+  public var hasGlobalType: Bool {self._globalType != nil}
   /// Clears the value of `globalType`. Subsequent reads from it will return its default value.
   public mutating func clearGlobalType() {self._globalType = nil}
 
@@ -4920,11 +4920,11 @@ public struct Fuzzilli_Protobuf_WasmStoreGlobal: Sendable {
   // methods supported on all messages.
 
   public var globalType: Fuzzilli_Protobuf_WasmILType {
-    get {return _globalType ?? Fuzzilli_Protobuf_WasmILType()}
+    get {_globalType ?? Fuzzilli_Protobuf_WasmILType()}
     set {_globalType = newValue}
   }
   /// Returns true if `globalType` has been explicitly set.
-  public var hasGlobalType: Bool {return self._globalType != nil}
+  public var hasGlobalType: Bool {self._globalType != nil}
   /// Clears the value of `globalType`. Subsequent reads from it will return its default value.
   public mutating func clearGlobalType() {self._globalType = nil}
 
@@ -4942,22 +4942,22 @@ public struct Fuzzilli_Protobuf_WasmTableGet: Sendable {
   // methods supported on all messages.
 
   public var elementType: Fuzzilli_Protobuf_WasmILType {
-    get {return _elementType ?? Fuzzilli_Protobuf_WasmILType()}
+    get {_elementType ?? Fuzzilli_Protobuf_WasmILType()}
     set {_elementType = newValue}
   }
   /// Returns true if `elementType` has been explicitly set.
-  public var hasElementType: Bool {return self._elementType != nil}
+  public var hasElementType: Bool {self._elementType != nil}
   /// Clears the value of `elementType`. Subsequent reads from it will return its default value.
   public mutating func clearElementType() {self._elementType = nil}
 
   public var minSize: Int64 = 0
 
   public var maxSize: Int64 {
-    get {return _maxSize ?? 0}
+    get {_maxSize ?? 0}
     set {_maxSize = newValue}
   }
   /// Returns true if `maxSize` has been explicitly set.
-  public var hasMaxSize: Bool {return self._maxSize != nil}
+  public var hasMaxSize: Bool {self._maxSize != nil}
   /// Clears the value of `maxSize`. Subsequent reads from it will return its default value.
   public mutating func clearMaxSize() {self._maxSize = nil}
 
@@ -4977,22 +4977,22 @@ public struct Fuzzilli_Protobuf_WasmTableSet: Sendable {
   // methods supported on all messages.
 
   public var elementType: Fuzzilli_Protobuf_WasmILType {
-    get {return _elementType ?? Fuzzilli_Protobuf_WasmILType()}
+    get {_elementType ?? Fuzzilli_Protobuf_WasmILType()}
     set {_elementType = newValue}
   }
   /// Returns true if `elementType` has been explicitly set.
-  public var hasElementType: Bool {return self._elementType != nil}
+  public var hasElementType: Bool {self._elementType != nil}
   /// Clears the value of `elementType`. Subsequent reads from it will return its default value.
   public mutating func clearElementType() {self._elementType = nil}
 
   public var minSize: Int64 = 0
 
   public var maxSize: Int64 {
-    get {return _maxSize ?? 0}
+    get {_maxSize ?? 0}
     set {_maxSize = newValue}
   }
   /// Returns true if `maxSize` has been explicitly set.
-  public var hasMaxSize: Bool {return self._maxSize != nil}
+  public var hasMaxSize: Bool {self._maxSize != nil}
   /// Clears the value of `maxSize`. Subsequent reads from it will return its default value.
   public mutating func clearMaxSize() {self._maxSize = nil}
 
@@ -5708,11 +5708,11 @@ public struct Fuzzilli_Protobuf_WasmDefineArrayType: Sendable {
   // methods supported on all messages.
 
   public var elementType: Fuzzilli_Protobuf_WasmILType {
-    get {return _elementType ?? Fuzzilli_Protobuf_WasmILType()}
+    get {_elementType ?? Fuzzilli_Protobuf_WasmILType()}
     set {_elementType = newValue}
   }
   /// Returns true if `elementType` has been explicitly set.
-  public var hasElementType: Bool {return self._elementType != nil}
+  public var hasElementType: Bool {self._elementType != nil}
   /// Clears the value of `elementType`. Subsequent reads from it will return its default value.
   public mutating func clearElementType() {self._elementType = nil}
 
@@ -5731,11 +5731,11 @@ public struct Fuzzilli_Protobuf_WasmStructField: Sendable {
   // methods supported on all messages.
 
   public var type: Fuzzilli_Protobuf_WasmILType {
-    get {return _type ?? Fuzzilli_Protobuf_WasmILType()}
+    get {_type ?? Fuzzilli_Protobuf_WasmILType()}
     set {_type = newValue}
   }
   /// Returns true if `type` has been explicitly set.
-  public var hasType: Bool {return self._type != nil}
+  public var hasType: Bool {self._type != nil}
   /// Clears the value of `type`. Subsequent reads from it will return its default value.
   public mutating func clearType() {self._type = nil}
 
@@ -5884,11 +5884,11 @@ public struct Fuzzilli_Protobuf_WasmRefNull: Sendable {
   // methods supported on all messages.
 
   public var type: Fuzzilli_Protobuf_WasmILType {
-    get {return _type ?? Fuzzilli_Protobuf_WasmILType()}
+    get {_type ?? Fuzzilli_Protobuf_WasmILType()}
     set {_type = newValue}
   }
   /// Returns true if `type` has been explicitly set.
-  public var hasType: Bool {return self._type != nil}
+  public var hasType: Bool {self._type != nil}
   /// Clears the value of `type`. Subsequent reads from it will return its default value.
   public mutating func clearType() {self._type = nil}
 
@@ -5925,11 +5925,11 @@ public struct Fuzzilli_Protobuf_WasmRefTest: Sendable {
   // methods supported on all messages.
 
   public var type: Fuzzilli_Protobuf_WasmILType {
-    get {return _type ?? Fuzzilli_Protobuf_WasmILType()}
+    get {_type ?? Fuzzilli_Protobuf_WasmILType()}
     set {_type = newValue}
   }
   /// Returns true if `type` has been explicitly set.
-  public var hasType: Bool {return self._type != nil}
+  public var hasType: Bool {self._type != nil}
   /// Clears the value of `type`. Subsequent reads from it will return its default value.
   public mutating func clearType() {self._type = nil}
 
